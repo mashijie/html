@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>网页登录</title>
+<style>
+    body{
+        width: 1350px;
+        margin: 0px;
+    }
+   body>div{
+       margin-left: 50px;
+       padding-right: 50px;
+   }
+    .Login{
+        color: aqua;
+    }
+    .logo{
+        border: 1px solid gray;
+        color: gray;
+    }
+    #header ul li{
+        display: inline-block;
+    }
+    #header ul{
+        margin: 0px;
+        display: inline-block;
+        float: right;
+    }
+    #service{
+        display: none;
+    }
+    #service ul{
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    #service ul li{
+        display: block;
+    }
+    #service_hover:hover div{
+        display: block;
+    }
+    #search{
+        margin-top: 75px;
+    }
+    #search img,#search_middel{
+        vertical-align: middle;
+    }
+    #search_middel{
+        display: inline-block;
+        margin-left: 20%;
+    }
+    #search_middel input{
+        float: left;
+        font-size: 30px;
+        border: 3px red solid;
+    }
+    #search_middel input:first-child{
+        width: 80px;
+        border-right:none;
+    }
+    #search_middel input:nth-child(3){
+        width: 100px;
+        background-color: red;
+        color: white;
+    }
+    #search span{
+        margin-top: -10px;
+        color: #808080;
+    }
+    #nav{
+        margin-left: 0px;
+        width: 100%;
+        background-color: red;
+        padding-top: 10px;
+    }
+    #shop_title{
+           margin-top: 10px;
+       }
+    #shop_title p{
+        margin: 0px;
+        display: inline-block;
+        font-size: 20px;
+    }
+    #shop_title p span{
+        float: right;
+        margin-right: 15px;
+    }
+
+    #shop_title p:first-child{
+        width: 230px;
+        background-color: crimson;
+        color: white;
+    }
+    #shop_title span{
+        padding-bottom: 10px;
+    }
+    #shop_title span{
+        margin-left: 30px;
+    }
+    .Emphasize{
+        color: red;
+    }
+    #nav ul{
+        padding-left: 10px;
+        margin-top: 0px;
+        list-style: none;
+    }
+    .min{
+        padding-top: 5px;
+        padding-bottom: 7px;
+        margin-bottom: 8px;
+        color: white;
+    }
+    .max{
+        padding-top: 5px;
+        padding-bottom: 7px;
+        margin-bottom: 14px;
+        color: white;
+    }
+    #nav ul li:hover{
+        background-color: black;
+    }
+    #nav ul li span{
+        float: right;
+        margin-right: 20px;
+
+    }
+
+</style>
+</head>
+<body>
+    <div id="header">
+        <span>Hi,请<span class="Login">登录</span>/<span class="Login">注册</span></span>
+        <ul>
+            <li>我的一号店<span class="logo">▼</span>|</li>
+            <li>收藏夹<span class="logo">▼</span>|</li>
+            <li>掌上一号店<span class="logo">▼</span>|</li>
+            <li id="service_hover">客户服务<span class="logo">▼</span>|
+                <div id="service">
+                    <ul>
+                        <li>包裹追踪</li>
+                        <li>常见问题</li>
+                        <li>在线投诉</li>
+                        <li>配送范围</li>
+                    </ul>
+                </div>
+            </li>
+            <li>网址导航<span class="logo">▼</span>|</li>
+            <li>关于我们</li>
+        </ul>
+        <div hidden>*</div>
+    </div>
+<div id="search">
+    <img src="img/logo.png" width="120">
+   <div id="search_middel">
+       <input type="submit" value="商品">
+       <input type="text" placeholder="请输入关键字">
+       <input type="submit" value="提交"><br>
+       <span>毛巾&nbsp;卫生纸&nbsp;电池&nbsp;洗发露&nbsp;衣服&nbsp;鞋子</span>
+   </div>
+
+</div>
+    <div id="shop_title">
+        <p>所有商品分类<span>∨</span></p>
+        <span class="Emphasize">首页</span>
+        <span class="Emphasize">自营</span>
+        <span class="Emphasize">一号团</span>
+        <span>一号商城</span>
+        <span>闪购</span>
+        <span>医药</span>
+    </div>
+<div id="nav">
+    <img src="img/nav.png" style="float: left;margin-left: 50px">
+    <ul style="display: inline-block; width: 200px;float: left">
+        <li class="max">进口食品<span>&gt;</span></li>
+        <li class="max">饮料<span>&gt;</span></li>
+        <li class="max">母婴<span>&gt;</span></li>
+        <li class="min">进口食品<span>&gt;</span></li>
+        <li class="min">饮料<span>&gt;</span></li>
+        <li class="min">母婴<span>&gt;</span></li>
+        <li class="min">进口食品<span>&gt;</span></li>
+        <li class="min">饮料<span>&gt;</span></li>
+        <li class="min">母婴<span>&gt;</span></li>
+        <li class="min">进口食品<span>&gt;</span></li>
+    </ul>
+    <img src="img/banner.jpg">
+</div>
+</body>
+</html>
